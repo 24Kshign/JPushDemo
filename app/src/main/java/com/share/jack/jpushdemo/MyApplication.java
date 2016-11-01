@@ -16,7 +16,6 @@ public class MyApplication extends Application {
         super.onCreate();
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
-        HttpServletAddress.getInstance().setOnlineAddress("http://192.168.1.109:8080/JPushDemo");
-//        HttpServletAddress.getInstance().setOnlineAddress("http://192.168.0.102:8080/JPushDemo");
+        HttpServletAddress.getInstance().setOnlineAddress("你的服务器域名/JPushDemo");
     }
 }
